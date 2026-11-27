@@ -1,0 +1,26 @@
+{
+  "name": "lekhx-app",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "LekhX offline multilingual office document platform powered by DrishtiJS",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "node ./node_modules/drishtijs/bin/drish.js run . --dev-editor",
+    "start": "node ./node_modules/drishtijs/bin/drish.js node start --app .",
+    "build": "node ./node_modules/drishtijs/bin/drish.js node build --app .",
+    "check": "node ./node_modules/drishtijs/bin/drish.js node check --app .",
+    "test": "PYTHONPATH=. ./.venv/bin/python -m unittest discover -s tests -v",
+    "api:dev": "./.venv/bin/python -m uvicorn backend.app.main:app --host 127.0.0.1 --port 8010",
+    "api:watch": "./.venv/bin/python -m uvicorn backend.app.main:app --reload --host 127.0.0.1 --port 8010",
+    "knowledge:ingest": "./.venv/bin/python scripts/ingest_reference_datasets.py",
+    "model:prepare": "./.venv/bin/python scripts/prepare_training_data.py",
+    "model:train": "./.venv/bin/python scripts/train_model.py",
+    "model:check": "./.venv/bin/python scripts/check_model_tools.py"
+  },
+  "dependencies": {
+    "drishtijs": "^2.4.0"
+  }
+}

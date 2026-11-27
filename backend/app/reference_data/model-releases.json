@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "dataset_version": "1.0",
+  "huggingface_repo": "drishtijs/LekhX",
+  "dataset_url": "https://huggingface.co/datasets/drishtijs/LekhX",
+  "default_model": "lekhx-1.0.0",
+  "models": [
+    {
+      "id": "lekhx-1.0.0",
+      "display_name": "LekhX Office 1.0 (Multilingual Q4_K_M)",
+      "family": "lekhx",
+      "quantization": "Q4_K_M",
+      "filename": "lekhx-1.0.0.gguf",
+      "minimum_memory_gb": 4,
+      "tier": "balanced",
+      "bundled": false,
+      "huggingface_repo": "drishtijs/LekhX",
+      "description": "Multilingual office planning and template-structuring model for doc, pdf, excel, powerpoint, and notes."
+    },
+    {
+      "id": "qwen2.5-0.5b",
+      "display_name": "Qwen2.5 0.5B Instruct (Q4_K_M Baseline)",
+      "family": "qwen2.5",
+      "quantization": "Q4_K_M",
+      "filename": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+      "minimum_memory_gb": 2,
+      "tier": "small",
+      "bundled": false,
+      "huggingface_repo": "drishtijs/LekhX",
+      "description": "Compact multilingual baseline model suitable for lightweight laptops."
+    }
+  ]
+}

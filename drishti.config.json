@@ -1,0 +1,12 @@
+{
+  "name": "lekhx-app",
+  "manifest": "./drishti.app.js",
+  "devPort": 3001,
+  "entry": "./app/main.js",
+  "route": "./app/pages/home.js",
+  "layout": "./app/layout/AppShell.js",
+  "style": "./app/styles.css",
+  "assetsDir": "./public",
+  "nodeIntegration": true,
+  "sourceMode": "javascript"
+}

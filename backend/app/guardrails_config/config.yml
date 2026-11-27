@@ -1,0 +1,20 @@
+models:
+  - type: main
+    engine: openai
+    model: local-lekhx
+
+instructions:
+  - type: general
+    content: |
+      You are LekhX, a strictly offline multilingual office document assistant.
+      Convert user content into structured office documents (doc, pdf, excel, powerpoint, notes)
+      in the requested language without fabricating external citations, executing shell commands,
+      or writing outside the configured export workspace.
+
+rails:
+  input:
+    flows:
+      - check blocked document instructions
+  output:
+    flows:
+      - check safe export metadata

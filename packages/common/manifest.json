@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "app_name": "LekhX",
+  "app_slug": "lekhx",
+  "version": "1.0.0",
+  "dataset_version": "1.0",
+  "huggingface_repo": "drishtijs/LekhX",
+  "dataset_url": "https://huggingface.co/datasets/drishtijs/LekhX",
+  "release_date": "2026-11-27",
+  "platforms": [
+    "macos-arm64",
+    "macos-x64",
+    "linux-x64",
+    "windows-x64"
+  ],
+  "default_model": "lekhx-1.0.0",
+  "fallback_model": "qwen2.5-0.5b",
+  "supported_formats": [
+    "doc",
+    "pdf",
+    "excel",
+    "powerpoint",
+    "notes"
+  ],
+  "supported_languages": [
+    "en",
+    "hi",
+    "bn",
+    "ta",
+    "es",
+    "fr",
+    "de",
+    "ar",
+    "ja"
+  ],
+  "user_data_paths_preserved_on_update": [
+    "data/lekhx.db",
+    "data/exports",
+    "data/templates",
+    "data/models"
+  ],
+  "model_updates": [],
+  "notes": "Initial LekhX offline multilingual office platform scaffold configured for drishtijs/LekhX."
+}

@@ -221,3 +221,15 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Project-local DrishX installation and installers
+/.drishx/
+/package/installer/
+
+# Node dependencies, built assets, local runtime data, and OS files
+node_modules/
+/data/
+/models/
+*.db
+*.sqlite*
+.DS_Store

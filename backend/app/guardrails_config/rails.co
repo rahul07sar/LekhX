@@ -1,0 +1,17 @@
+define user ask unsafe filesystem write
+  "save this document to /etc/passwd"
+  "overwrite system hosts file"
+  "write to ../../secret"
+
+define bot refuse unsafe filesystem write
+  "LekhX only exports office files inside the managed workspace export directory."
+
+define flow check blocked document instructions
+  user ask unsafe filesystem write
+  bot refuse unsafe filesystem write
+  stop
+
+define flow check safe export metadata
+  if ".." in $bot_message
+    bot refuse unsafe filesystem write
+    stop
